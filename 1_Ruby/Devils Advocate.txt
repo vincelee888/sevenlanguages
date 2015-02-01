@@ -1,0 +1,7 @@
+too flexible - can override everything (monkey patchings)
+low performance - ultimately replaced when grow in size, why spend time adding gloss with domain specific language?
+too many ways to do the same thing - too many methods on classes/if,unless, xxx if truthy, xxx unless truthy - more to learn/reason about when picking up someone else's code
+monkey patching/dynamic typing increases the potential for issues
+global variables
+odd quirks - parentheses with multiple arguments
+0 is true!

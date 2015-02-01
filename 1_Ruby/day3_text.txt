@@ -1,0 +1,17 @@
+Meta-Programming
+---
+Writing programs that write programs. - ActiveRecord writes classes that link to db tables
+
+Open Classes
+---
+Easily add new methods to existing classes - potential to break everything!
+Easily build domain specific language
+
+Method Missing
+---
+special debugging method called when a non-existent method is called
+can be overridden to create elegant code - lose debugging tool
+
+Modules
+---
+rather than use inheritance, re-usable behaviour can be included from methods

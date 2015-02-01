@@ -1,0 +1,3 @@
+name, age, birthplace
+vince, 34, malton
+cat, 25, essex
