@@ -24,21 +24,48 @@ flavour(sweet, soda).
 % rules
 food_flavour(X, Y) :- food_type(X, Z), flavour(Y,Z).
 
-different(red, green).
-different(red, blue).
-different(blue, green).
-different(green, red).
-different(green, blue).
-different(blue, red).
+different(red, green). different(red, blue).
+different(green, red). different(green, blue).
+different(blue, red). different(blue, green).
 
 coloring(Alabama, Mississippi, Georgia, Tennessee, Florida) :-
-	different(Mississippi, Tennessee),
-	different(Mississippi, Alabama),
-	different(Alabama, Tennessee),
-	different(Alabama, Mississippi),
-	different(Alabama, Georgia),
-	different(Alabama, Florida),
-	different(Georgia, Florida),
-	different(Georgia, Tennessee).
+    different(Mississippi, Tennessee),
+    different(Mississippi, Alabama),
+    different(Alabama, Tennessee),
+    different(Alabama, Mississippi),
+    different(Alabama, Georgia),
+    different(Alabama, Florida),
+    different(Georgia, Florida),
+    different(Georgia, Tennessee).
 
-	
+% Mississippi = Georgia wtf?
+
+% express the context of the issue and then make queries on it, letting Prolog do the work
+
+% Unification
+% ---
+
+% Java/Ruby use variable assignment to unify two structures to state they are equal 
+% eg. x = 10
+
+cat(lion).
+cat(tiger).
+
+dorothy(X, Y, Z) :- X = lion, Y = tiger, Z = bear.
+twin_cats(X, Y) :- cat(X), cat(Y).
+
+% dorothy(lion, tiger, bear).
+% direct match, so unificiation
+
+% dorothy(One, Two, Three).
+% Unifies One to lion, Two to tiger, Three to bear, from X = lion etc
+
+
+% Douglas Adams reference:
+% One
+% |    .
+% ... 1,000,000 ............ 10,000,000 years later
+% 
+%       >> 42 << (last release gives the question)
+
+% uses - timetabling, scheduling deliveries, keywords
