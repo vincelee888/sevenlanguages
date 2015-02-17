@@ -2,6 +2,7 @@
 % http://www.swi-prolog.org/pldoc/man?section=quickstart
 % http://kti.ms.mff.cuni.cz/~bartak/prolog
 % SWI-Prolog: http://www.swi-prolog.org/pldoc/doc_for?object=manual
+% http://www.learnprolognow.org/lpnpage.php?pageid=online
 
 % listing. list what is in the current Prolog database
 % consult('filename'). load program
