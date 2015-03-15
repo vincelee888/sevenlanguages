@@ -8,9 +8,10 @@ Overview
 * Bridges gap betwen OOP and FP - general purpose
 * Statically typed
 * Type inference
-* Immutable variables
+* Immutable variables - val; var declares mutable variables
 * Advanced programming constructs - concurrency actors, higher-order functions on collection 
-* Strongly typed! Compile-time type checking
+* Strongly typed! Compile-time type checking eg:
+	4 * "abc"
 
 Functional Programming
 ---
